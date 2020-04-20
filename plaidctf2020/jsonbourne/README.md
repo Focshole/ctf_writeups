@@ -58,5 +58,5 @@ Which, after a grooming phase by @Zom, could also be written as:
 
 Curiously, changing the value of ` _var_name_i` could also cause the program to loop forever:
 ```
-{"digging":["down","task _var_name_i=10",{"the":"rabbit"},"hole"]}
+{"going":["down","task _var_name_i=10",{"the":"rabbit"},"hole"]}
 ```
